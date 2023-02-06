@@ -1,0 +1,3 @@
+﻿  text.cpp
+C:\Users\82104\Desktop\Intelli_JYE\C++\StartCode\StartCode\text.cpp(5,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  StartCode.vcxproj -> C:\Users\82104\Desktop\Intelli_JYE\C++\StartCode\x64\Debug\StartCode.exe
