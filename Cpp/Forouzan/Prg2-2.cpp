@@ -7,6 +7,12 @@ using namespace std;
 
 int main()
 {
-    cout << "안녕하세요 반갑습니다";
+    cout << "******" << endl;
+    cout << "+*****" << endl;
+    cout << "+*****" << endl;
+    cout << "+*****" << endl;
+    cout << "+*****" << endl;
+    cout << "+*****" << endl;
+    cout << "별 찍기 드디어 성공했다 와";
     return 0;
 }
