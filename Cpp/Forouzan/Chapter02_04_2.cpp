@@ -1,6 +1,6 @@
 //
 // Created by 82104 on 2023-02-07.
-// 04 자료형 - 문자 자료형, 불 자료형
+// 04 자료형 - 문자 자료형, 불 자료형, 부동 소수점 자료형, void 자료형, 문자열 자료형
 
 # include <iostream>
 # include <string>
