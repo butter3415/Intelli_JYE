@@ -118,6 +118,12 @@ int main() {
     cout << "t 값 : " << t << endl;  // 6
     cout << "u 값 : " << u << endl;  // 4
 
+// 07 lvalue 와 rvalue
+// 할당 연산자 왼쪽에 놓는 엔티티 : lvalue(left value) - 값의 목적지
+// 할당 연산자 오른쪽에 놓는 엔티티 : rvalue(right value) - 값의 소스
+// x = 3 -> lvalue : x / rvalue : 3
+// x += 3 ===> x = x + 3 -> x는 왼쪽과 오른쪽에 모두 온다. 이 경우 값의 목적지이자 소스로 모두 동작하므로 x 는 lvalue 이자 rvalue 임
+
 
 
 
