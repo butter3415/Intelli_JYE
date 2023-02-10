@@ -3,4 +3,4 @@ project(Forouzan)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Forouzan Chapter03_01.cpp)
+add_executable(Forouzan Chapter03_02.cpp)
