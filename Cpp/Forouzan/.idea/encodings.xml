@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/CMakeLists.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CMakeLists.txt" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/Chapter02_02.cpp" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/Chapter02_04_1.cpp" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/Chapter02_04_2.cpp" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/Chapter02_ProgrammingTest.cpp" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/Chapter03_01.cpp" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/Chapter03_02.cpp" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/Chpater03_03.cpp" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/Prg2-2.cpp" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/main.cpp" charset="x-windows-949" />
   </component>
