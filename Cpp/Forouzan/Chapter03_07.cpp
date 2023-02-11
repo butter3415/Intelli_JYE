@@ -53,4 +53,32 @@ int main() {
 //    cout << number << " 을 시, 분, 초로 나타내면 ";
 //    cout << hours << "시간 " << minutes << "분 " << seconds << "초";
 
+// [4] 평균과 분산 구하기 - 3개의 정수 읽고 전체 평균 구한 뒤, 각각의 분산 구하기
+//                       (분산 : 특정 값이 평균에서 얼마나 떨어져있는가)
+    int num1, num2, num3, sum;
+    double averageNum, bun1, bun2, bun3;
+
+    cout << "숫자1 입력 :";
+    cin >> num1;
+    cout << "숫자2 입력 :";
+    cin >> num2;
+    cout << "숫자3 입력 :";
+    cin >> num3;
+
+    sum = num1 + num2 + num3;
+    averageNum = static_cast<double>(sum) / 3;
+
+    bun1 = num1 - averageNum;
+    bun2 = num2 - averageNum;
+    bun3 = num3 - averageNum;
+
+    cout << fixed << setprecision(2);
+    cout << "숫자1, 2, 3 평균 : " << left << setw(9) << averageNum << endl;
+    cout << "숫자1 분산 : " << left << showpos << setw(9) << bun1 << endl;
+    cout << "숫자2 분산 : " << left << showpos << setw(9) << bun2 << endl;
+    cout << "숫자3 분산 : " << left << showpos << setw(9) << bun3 << endl;
+    // setw(9) : 메모리 자릿수가 9자리이다. setfill('*') 하면 나머지 자리 * 로 채워짐
+    // showpos : 양수이면 + 표시, 음수이면 - 표시 나타내줌
+
+
 }
