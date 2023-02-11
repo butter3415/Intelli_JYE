@@ -29,17 +29,28 @@ int main() {
 //    cout << "소수점 아래 부분 : " << fPart << endl;
 
 
-// [2] 정수의 첫 번째 자릿수 추출하기
-    unsigned int num1, firstNum;
+//// [2] 정수의 첫 번째 자릿수 추출하기
+//    unsigned int num1, firstNum;
+//
+//    cout << "정수 입력 :";
+//    cin >> num1;
+//
+//    firstNum = num1 % 10;
+//
+//    cout << "입력한 정수 : " << num1 << endl;
+//    cout << "정수의 첫 번째 자릿수 : " << firstNum << endl;
 
-    cout << "정수 입력 :";
-    cin >> num1;
-
-    firstNum = num1 % 10;
-
-    cout << "입력한 정수 : " << num1 << endl;
-    cout << "정수의 첫 번째 자릿수 : " << firstNum << endl;
-
-
+//// [3] 초 단위의 시간을 시, 분, 초 단위로 나누어서 변환하기
+//    unsigned long number, hours, minutes, seconds;
+//
+//    cout << "초 단위 시간 정수 입력 :";
+//    cin >> number;
+//
+//    hours = number / 3600;
+//    minutes = (number - (hours * 3600L)) / 60;
+//    seconds = ((number - (hours * 3600L)) - minutes * 60);
+//
+//    cout << number << " 을 시, 분, 초로 나타내면 ";
+//    cout << hours << "시간 " << minutes << "분 " << seconds << "초";
 
 }
