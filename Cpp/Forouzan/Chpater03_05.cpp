@@ -71,13 +71,35 @@ int main() {
 ////               - 필요할 때마다 사용
 //// setfill(ch) 조정자 - 필드의 크기가 실체 출력 내용보다 클 때 발생하는 패딩을 어던 문자로 채울지 지정할 때 사용
 ////                   - 괄호 안에는 리터럴 문자넣기
+//
+//// * 부동 소수점 관련 조정자 사용
+//    double x = 1237234.1235;
+//    cout << fixed << setprecision(2) << showpos << setfill('*') << endl;
+//    cout << setw(15) << left << x << endl;  // +1237234.12****
+//    cout << setw(15) << internal << x << endl;  // +****1237234.12
+//    cout << setw(15) << right << x << endl; //****+1237234.12
 
-// * 부동 소수점 관련 조정자 사용
-    double x = 1237234.1235;
-    cout << fixed << setprecision(2) << showpos << setfill('*') << endl;
-    cout << setw(15) << left << x << endl;  // +1237234.12****
-    cout << setw(15) << internal << x << endl;  // +****1237234.12
-    cout << setw(15) << right << x << endl; //****+1237234.12
+//// [3] 입력 조정자(noboolalpha, boolalpha, dec, oct, hax)
+//// 입력 받을 때 어떻게 입력받는지 지정해주는 조정자
+//
+//// * 불 자료형을 false 와 true 로 입력받기
+//    bool flag;
+//
+//    cout << "불 자료형을 true 또는 false 로 입력:" ;
+//    cin >> boolalpha >> flag;
+//    cout << flag;
+
+// * 여러 진법의 정수 입력받기
+    int num1, num2, num3;
+
+    cout << "첫 번째 숫자를 10진수로 입력 :";
+    cin >> num1;
+    cout << "두 번째 숫자를 8진수로 입력 :";
+    cin >> oct >> num2;
+    cout << "세 번째 숫자를 16진수로 입력 :";
+    cin >> hex >> num3;
+
+    cout << num1 << " / " << num2 << " / " << num3 <<  endl;
 
 
 
