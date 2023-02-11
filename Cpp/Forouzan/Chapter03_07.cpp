@@ -12,23 +12,33 @@
 using namespace std;
 
 int main() {
-// [1] 부동 소수점 분해하기 - 부동 소수점이 주어졌을 때 정수와 소수점 아래 부분을 추출하느 프로그램
+//// [1] 부동 소수점 분해하기 - 부동 소수점이 주어졌을 때 정수와 소수점 아래 부분을 추출하느 프로그램
+//
+//    double fPart;
+//    int iPart;
+//    double number;
+//
+//    cout << "부동 소수점 입력 :";
+//    cin >> number;
+//
+//    iPart = static_cast<int>(number);
+//    fPart = number - iPart;
+//
+//    // cout << fixed << showpoint << setprecision(2);
+//    cout << "정수 부분 : " << iPart << endl;
+//    cout << "소수점 아래 부분 : " << fPart << endl;
 
-    double fPart;
-    int iPart;
-    double number;
 
-    cout << "부동 소수점 입력 :";
-    cin >> number;
+// [2] 정수의 첫 번째 자릿수 추출하기
+    unsigned int num1, firstNum;
 
-    iPart = static_cast<int>(number);
-    fPart = number - iPart;
+    cout << "정수 입력 :";
+    cin >> num1;
 
-    // cout << fixed << showpoint << setprecision(2);
-    cout << "정수 부분 : " << iPart << endl;
-    cout << "소수점 아래 부분 : " << fPart << endl;
+    firstNum = num1 % 10;
 
-
+    cout << "입력한 정수 : " << num1 << endl;
+    cout << "정수의 첫 번째 자릿수 : " << firstNum << endl;
 
 
 
