@@ -35,16 +35,41 @@ int main() {
 
 // * 부호 있는 정수 자료형의 오버플로우와 언더플로우 확인하기
 
-    int num1 = numeric_limits<int>::max();
-    int num2 = numeric_limits<int>::min();
+//    int num1 = numeric_limits<int>::max();
+//    int num2 = numeric_limits<int>::min();
+//
+//    cout << "부호 O 정수 최대값 : " << num1 << endl;
+//    cout << "부호 O 정수 최소값 : " << num2 << endl;
+//
+//    num1 += 1;  // 2147483647
+//    num2 -= 1;  // -2147483648
+//
+//    cout << "오버플로우 발생 num1 : " << num1 << endl; // -2147483648
+//    cout << "언더플로우 발생 num2 : " << num2 << endl; // 2147483647
 
-    cout << "부호 O 정수 최대값 : " << num1 << endl;
-    cout << "부호 O 정수 최소값 : " << num2 << endl;
+// [3] 부동 소수점의 오버플로우와 언더플로우
+// ! 부동 소수점 자료형은 무조건 부호가 있다
+// ! 범위 한 바퀴 도는 현상 x
+// ! 오버플로우는 양의 무한대로 수렴 / 언더플로우는 음의 무한대로 수렴
+// ! 부동 소수점에서 최소값 : 0에 가장 가까운 숫자
+// ! 부동 소수점에서 최대값 : 표현할 수 있는 가장 작은 수와 가장 큰 수(양쪽 끝)
+// ! 최대값에서 더 작아지거나 증가하면 양의 무한대(+inf) or 음의 무한대(-inf) 발생
 
-    num1 += 1;  // 2147483647
-    num2 -= 1;  // -2147483648
+// * double 자료형의 오버플로우와 언더플로우 확인하기
 
-    cout << "오버플로우 발생 num1 : " << num1 << endl; // -2147483648
-    cout << "언더플로우 발생 num2 : " << num2 << endl; // 2147483647
+    double num1 = +numeric_limits<double>::max();
+    double num2 = -numeric_limits<double>::max();
+
+    cout << "double 최대값 : " << num1 << endl;
+    cout << "double 최소값 : " << num2 << endl;
+
+    num1 *= 1000.00;
+    num2 *= 1000.00;
+
+    cout << "오버플로우 발생 num1 * 1000.00 : " << num1 << endl;
+    cout << "언더플로우 발생 num2 * 1000.00 : " << num2 << endl;
+
+
+
 
 }
