@@ -90,18 +90,34 @@ int main(){
 //    cout << "세번째 자릿수 : " << thirdNum << endl;
 //    cout << "결과값 정수 : " << resultNum << endl;
 
-// 07. 시간을 입력으로 받았을 때, 이를 주, 일(0~6일 사이의 값), 시간(0~23시 사이의 값)으로 변환하는 프로그램을 만드세요.
+//// 07. 시간을 입력으로 받았을 때, 이를 주, 일(0~6일 사이의 값), 시간(0~23시 사이의 값)으로 변환하는 프로그램을 만드세요.
+//
+//    int number, dayNum, hourNum, weekNum;
+//
+//    cout << "몇 시간인가요? :";
+//    cin >> number;
+//
+//    weekNum = ((number / 24) / 7) ;
+//    dayNum = (number - (weekNum * 7 * 24)) / 24;
+//    hourNum =(number - (weekNum * 7 * 24)) - (dayNum * 24);
+//
+//    cout << number << "시간은 " << weekNum << "주 " << dayNum << "일 " << hourNum << "시간 " << endl;
 
-    int number, dayNum, hourNum, weekNum;
+// 08. 시간을 시, 분, 초 단위로 입력받았을 때, 이를 초 단위로 변환하는 프로그램을 만드세요.
+    int number, hourNum, minuteNum, secondNum;
 
-    cout << "몇 시간인가요? :";
-    cin >> number;
+    cout << "시간은? (시, 분, 초 차례로 입력)" << endl;
+    cout << "시간 :";
+    cin >> hourNum;
+    cout << "분 :";
+    cin >> minuteNum;
+    cout << "초 :";
+    cin >> secondNum;
 
-    weekNum = ((number / 24) / 7) ;
-    dayNum = (number - (weekNum * 7 * 24)) / 24;
-    hourNum =(number - (weekNum * 7 * 24)) - (dayNum * 24);
+    number = (hourNum * 3600) + (minuteNum * 60) + secondNum;
 
-    cout << number << "시간은 " << weekNum << "주 " << dayNum << "일 " << hourNum << "시간 " << endl;
+    cout << hourNum << "시간 " << minuteNum << "분 " << secondNum << "초를 초로 환산하면 ";
+    cout << number  << "초이다.";
 
 
 
