@@ -165,17 +165,33 @@ int main(){
 //
 //    cout << "섭씨 온도 " << cTem << "℃는 화씨온도 " << fTem << "℉ 이다.";
 
-// 12. 주어진 화씨 온도(Fahrenheit)를 섭씨 온도(Celsius)로 변환해서 출력하는 프로그램ㅇ르 만드세요.
-//     화씨 온도를 섭씨 온도로 변환하는 공식은 C = (F-32) * 5/9 입니다.
+//// 12. 주어진 화씨 온도(Fahrenheit)를 섭씨 온도(Celsius)로 변환해서 출력하는 프로그램ㅇ르 만드세요.
+////     화씨 온도를 섭씨 온도로 변환하는 공식은 C = (F-32) * 5/9 입니다.
+//
+//    double cTem, fTem;
+//
+//    cout << "화씨 온도 입력 :" ;
+//    cin >> fTem;
+//
+//    cTem = (fTem - 32.0) * 5.0 / 9.0;
+//
+//    cout << "화씨 온도 " << fTem << "℉는 섭씨 온도 " << cTem << "℃ 이다.";
 
-    double cTem, fTem;
+// 13. 아르바이트로 일주일에 기본 40시간을 일한다고 가정합니다. 그리고 40시간을 넘게 일을 하는 경우, 넘는 시급은 60%가 추가로 지급됩니다.
+//     일주일의 기본 급여와 추가로 일한 시간을 입력했을 때, 전체 급여를 구하는 프로그램을 작성하세요.
+    int payMoney, workHour, hourPay;
+    long salary;
 
-    cout << "화씨 온도 입력 :" ;
-    cin >> fTem;
+    cout << "기본급 :" ;
+    cin >> payMoney;
+    cout << "일한 시간 :" ;
+    cin >> workHour;
 
-    cTem = (fTem - 32.0) * 5.0 / 9.0;
+    hourPay = payMoney / 40;
 
-    cout << "화씨 온도 " << fTem << "℉는 섭씨 온도 " << cTem << "℃ 이다.";
+    salary = payMoney + ((workHour % 40) * hourPay * 1.6);
+
+    cout << "전체 급여는 " << salary << "입니다.";
 
 
 
