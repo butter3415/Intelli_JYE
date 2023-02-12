@@ -133,24 +133,38 @@ int main(){
 //    cout << number << "을 시, 분, 초 단위로 나타내면 ";
 //    cout << hourNum << "시간 " << minuteNum << "분 " << secondNum << "초." << endl;
 
-// 10. 4개의 점수(int 자료형)를 입력받고, 이를 기반으로 평균 점수(double 자료형)를 찾아 출력하는 프로그램을 만드세요.
-    int num1, num2, num3, num4;
-    double sumNum, averageNum;
+//// 10. 4개의 점수(int 자료형)를 입력받고, 이를 기반으로 평균 점수(double 자료형)를 찾아 출력하는 프로그램을 만드세요.
+//    int num1, num2, num3, num4;
+//    double sumNum, averageNum;
+//
+//    cout << "4개 점수 입력 :" << endl;
+//    cout << "점수 1 :" ;
+//    cin >> num1;
+//    cout << "점수 2 :" ;
+//    cin >> num2;
+//    cout << "점수 3 :" ;
+//    cin >> num3;
+//    cout << "점수 4 :" ;
+//    cin >> num4;
+//
+//    sumNum = num1 + num2 + num3 + num4;
+//    averageNum = sumNum / 4;
+//
+//    cout << "점수 평균 : " << averageNum << endl;
 
-    cout << "4개 점수 입력 :" << endl;
-    cout << "점수 1 :" ;
-    cin >> num1;
-    cout << "점수 2 :" ;
-    cin >> num2;
-    cout << "점수 3 :" ;
-    cin >> num3;
-    cout << "점수 4 :" ;
-    cin >> num4;
+//// 11. 주어진 섭씨 온도(Celsius)를 화씨 온도(Fahrenheit)로 변환해서 출력하는 프로그램을 만드세요.
+////     섭씨 온도를 화씨 온도로 변환하는 공식은 F = (9/5)C + 32 입니다.
+//
+//    double cTem;
+//    double fTem;
+//
+//    cout << "섭씨 온도 입력 : " ;
+//    cin >> cTem;
+//
+//    fTem = (9.0/5.0) * cTem + 32.0;
+//
+//    cout << "섭씨 온도 " << cTem << "℃는 화씨온도 " << fTem << "℉ 이다.";
 
-    sumNum = num1 + num2 + num3 + num4;
-    averageNum = sumNum / 4;
-
-    cout << "점수 평균 : " << averageNum << endl;
 
 
 
