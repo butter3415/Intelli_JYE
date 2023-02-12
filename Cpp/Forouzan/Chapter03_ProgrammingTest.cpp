@@ -72,25 +72,36 @@ int main(){
 //    cout << "두번째 자릿수 : " << secondNum << endl;
 //    cout << "세번째 자릿수 : " << thirdNum << endl;
 
-// 06. 세 자릿수의 정수가 주어졌을 때, 해당 숫자를 역순으로 하는 정수를 구성하고 출력하는 프로그램을 만드세요.
-//     (예를 들어 372가 주어지면 273을 출력).
-    int number, firstNum, secondNum, thirdNum, resultNum;
+//// 06. 세 자릿수의 정수가 주어졌을 때, 해당 숫자를 역순으로 하는 정수를 구성하고 출력하는 프로그램을 만드세요.
+////     (예를 들어 372가 주어지면 273을 출력).
+//    int number, firstNum, secondNum, thirdNum, resultNum;
+//
+//    cout << "int 자료형 정수 입력 :";
+//    cin >> number;
+//
+//    firstNum = number % 10;
+//    secondNum = (number % 100) / 10 ;
+//    thirdNum = (number % 1000) / 100 ;
+//    resultNum = (firstNum * 100) + (secondNum * 10) + (thirdNum * 1);
+//
+//    cout << "입력한 정수 : " << number << endl;
+//    cout << "첫번째 자릿수 : " << firstNum << endl;
+//    cout << "두번째 자릿수 : " << secondNum << endl;
+//    cout << "세번째 자릿수 : " << thirdNum << endl;
+//    cout << "결과값 정수 : " << resultNum << endl;
 
-    cout << "int 자료형 정수 입력 :";
+// 07. 시간을 입력으로 받았을 때, 이를 주, 일(0~6일 사이의 값), 시간(0~23시 사이의 값)으로 변환하는 프로그램을 만드세요.
+
+    int number, dayNum, hourNum, weekNum;
+
+    cout << "몇 시간인가요? :";
     cin >> number;
 
-    firstNum = number % 10;
-    secondNum = (number % 100) / 10 ;
-    thirdNum = (number % 1000) / 100 ;
-    resultNum = (firstNum * 100) + (secondNum * 10) + (thirdNum * 1);
+    weekNum = ((number / 24) / 7) ;
+    dayNum = (number - (weekNum * 7 * 24)) / 24;
+    hourNum =(number - (weekNum * 7 * 24)) - (dayNum * 24);
 
-    cout << "입력한 정수 : " << number << endl;
-    cout << "첫번째 자릿수 : " << firstNum << endl;
-    cout << "두번째 자릿수 : " << secondNum << endl;
-    cout << "세번째 자릿수 : " << thirdNum << endl;
-    cout << "결과값 정수 : " << resultNum << endl;
-
-
+    cout << number << "시간은 " << weekNum << "주 " << dayNum << "일 " << hourNum << "시간 " << endl;
 
 
 
