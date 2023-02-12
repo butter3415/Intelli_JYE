@@ -177,22 +177,40 @@ int main(){
 //
 //    cout << "화씨 온도 " << fTem << "℉는 섭씨 온도 " << cTem << "℃ 이다.";
 
-// 13. 아르바이트로 일주일에 기본 40시간을 일한다고 가정합니다. 그리고 40시간을 넘게 일을 하는 경우, 넘는 시급은 60%가 추가로 지급됩니다.
-//     일주일의 기본 급여와 추가로 일한 시간을 입력했을 때, 전체 급여를 구하는 프로그램을 작성하세요.
-    int payMoney, workHour, hourPay;
-    long salary;
+//// 13. 아르바이트로 일주일에 기본 40시간을 일한다고 가정합니다. 그리고 40시간을 넘게 일을 하는 경우, 넘는 시급은 60%가 추가로 지급됩니다.
+////     일주일의 기본 급여와 추가로 일한 시간을 입력했을 때, 전체 급여를 구하는 프로그램을 작성하세요.
+//    int payMoney, workHour, hourPay;
+//    long salary;
+//
+//    cout << "기본급 :" ;
+//    cin >> payMoney;
+//    cout << "일한 시간 :" ;
+//    cin >> workHour;
+//
+//    hourPay = payMoney / 40;
+//
+//    salary = payMoney + ((workHour % 40) * hourPay * 1.6);
+//
+//    cout << "전체 급여는 " << salary << "입니다.";
 
-    cout << "기본급 :" ;
-    cin >> payMoney;
-    cout << "일한 시간 :" ;
-    cin >> workHour;
+// 14. 1,400달러의 텔레비전, 220달러의 DVD 플레이어, 35.20달러의 리모컨 3가지 제품을 판매하는 회사가 있습니다.
+//     고객이 구입한 장비의 수를 입력으로 받는다고 할 때, 8.25% 의 소비세가 추가된 전체 비용을 계산하는 프로그램을 만드세요.
 
-    hourPay = payMoney / 40;
+    double tvNum, dvdNum, remNum;
+    double totalCost, taxTotalCost;
 
-    salary = payMoney + ((workHour % 40) * hourPay * 1.6);
+    cout << "텔레비전 구입 수는 ?" ;
+    cin >> tvNum;
+    cout << "DVD 구입 수는 ?" ;
+    cin >> dvdNum;
+    cout << "리모컨 구입 수는 ?" ;
+    cin >> remNum;
 
-    cout << "전체 급여는 " << salary << "입니다.";
+    totalCost = (tvNum * 1400) + (dvdNum * 220) + (remNum * 35.20);
+    taxTotalCost = totalCost + (totalCost * 0.0825);
+    taxTotalCost = static_cast<int>(taxTotalCost);
 
+    cout << "소비세 포함 전체 비용은 " << taxTotalCost << "달러 입니다.";
 
 
 }
