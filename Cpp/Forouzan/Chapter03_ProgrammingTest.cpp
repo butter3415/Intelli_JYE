@@ -103,21 +103,35 @@ int main(){
 //
 //    cout << number << "시간은 " << weekNum << "주 " << dayNum << "일 " << hourNum << "시간 " << endl;
 
-// 08. 시간을 시, 분, 초 단위로 입력받았을 때, 이를 초 단위로 변환하는 프로그램을 만드세요.
-    int number, hourNum, minuteNum, secondNum;
+//// 08. 시간을 시, 분, 초 단위로 입력받았을 때, 이를 초 단위로 변환하는 프로그램을 만드세요.
+//    int number, hourNum, minuteNum, secondNum;
+//
+//    cout << "시간은? (시, 분, 초 차례로 입력)" << endl;
+//    cout << "시간 :";
+//    cin >> hourNum;
+//    cout << "분 :";
+//    cin >> minuteNum;
+//    cout << "초 :";
+//    cin >> secondNum;
+//
+//    number = (hourNum * 3600) + (minuteNum * 60) + secondNum;
+//
+//    cout << hourNum << "시간 " << minuteNum << "분 " << secondNum << "초를 초로 환산하면 ";
+//    cout << number  << "초이다.";
 
-    cout << "시간은? (시, 분, 초 차례로 입력)" << endl;
-    cout << "시간 :";
-    cin >> hourNum;
-    cout << "분 :";
-    cin >> minuteNum;
-    cout << "초 :";
-    cin >> secondNum;
-
-    number = (hourNum * 3600) + (minuteNum * 60) + secondNum;
-
-    cout << hourNum << "시간 " << minuteNum << "분 " << secondNum << "초를 초로 환산하면 ";
-    cout << number  << "초이다.";
+//// 09. 초 단위(long 자료형)를 입력받았을 때, 이를 시, 분, 초 단위로 변환하는 프로그램을 만드세요.
+//    long number;
+//    int hourNum, minuteNum, secondNum;
+//
+//    cout << "초 단위(long 자료형) 입력 :";
+//    cin >> number;
+//
+//    hourNum = number / 3600L;
+//    minuteNum = (number - (hourNum * 3600)) / 60;
+//    secondNum = (number - (hourNum * 3600)) - (minuteNum * 60) ;
+//
+//    cout << number << "을 시, 분, 초 단위로 나타내면 ";
+//    cout << hourNum << "시간 " << minuteNum << "분 " << secondNum << "초." << endl;
 
 
 
