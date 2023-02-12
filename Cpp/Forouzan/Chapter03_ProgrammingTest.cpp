@@ -57,8 +57,24 @@ int main(){
 //
 //    cout << "정수의 두 번째 자릿수 : " << secondNum << endl ;
 
-// 05. int 자료형의 정수를 입력받아서, 첫 번째부터 세 번째 자릿수를 각각 출력하는 프로그램을 만드세요.
-    int number, firstNum, secondNum, thirdNum;
+//// 05. int 자료형의 정수를 입력받아서, 첫 번째부터 세 번째 자릿수를 각각 출력하는 프로그램을 만드세요.
+//    int number, firstNum, secondNum, thirdNum;
+//
+//    cout << "int 자료형 정수 입력 :";
+//    cin >> number;
+//
+//    firstNum = number % 10;
+//    secondNum = (number % 100) / 10 ;
+//    thirdNum = (number % 1000) / 100 ;
+//
+//    cout << "입력한 정수 : " << number << endl;
+//    cout << "첫번째 자릿수 : " << firstNum << endl;
+//    cout << "두번째 자릿수 : " << secondNum << endl;
+//    cout << "세번째 자릿수 : " << thirdNum << endl;
+
+// 06. 세 자릿수의 정수가 주어졌을 때, 해당 숫자를 역순으로 하는 정수를 구성하고 출력하는 프로그램을 만드세요.
+//     (예를 들어 372가 주어지면 273을 출력).
+    int number, firstNum, secondNum, thirdNum, resultNum;
 
     cout << "int 자료형 정수 입력 :";
     cin >> number;
@@ -66,11 +82,14 @@ int main(){
     firstNum = number % 10;
     secondNum = (number % 100) / 10 ;
     thirdNum = (number % 1000) / 100 ;
+    resultNum = (firstNum * 100) + (secondNum * 10) + (thirdNum * 1);
 
     cout << "입력한 정수 : " << number << endl;
     cout << "첫번째 자릿수 : " << firstNum << endl;
     cout << "두번째 자릿수 : " << secondNum << endl;
     cout << "세번째 자릿수 : " << thirdNum << endl;
+    cout << "결과값 정수 : " << resultNum << endl;
+
 
 
 
