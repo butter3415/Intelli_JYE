@@ -118,24 +118,72 @@ int main() {
 //    cout << "더 큰 숫자는 " << maxNum << "이다!" << endl;
 // 깃은 너무 어렵다..
 
-// 중첩 if-else 조건문
+//// 중첩 if-else 조건문
+//
+//// * 입력받은 두 숫자가 왼쪽이 더 큰지, 같은지, 더 작은지 출력하는 프로그램
+//    long num1, num2;
+//
+//    cout << "첫 번째 숫자 :";
+//    cin >> num1;
+//    cout << "두 번째 숫자 :";
+//    cin >> num2;
+//
+//    if (num1 > num2){
+//        cout << num1 << "이 더 큽니다(첫번째 수)" << endl;
+//    } else if (num1 == num2){
+//        cout << num1 << "과(와) " << num2 << "은(는) 같습니다." << endl;
+//    } else if (num1 < num2){
+//        cout << num2 << "이 더 큽니다(두번째 수)" << endl;
+//    }
+//// * 복합 구문을 사용해서 명확하게 짝을 맞춰야 합니다.
 
-// * 입력받은 두 숫자가 왼쪽이 더 큰지, 같은지, 더 작은지 출력하는 프로그램
-    long num1, num2;
+// [5] if-else 조건문(여러 방향 조건 분기)
+// if-else 조건문을 중첩해서 사용하면 이와 같은 여러 방향 조건 분기를 구현할 수 있습니다.
+/* 만약 조건1이 true라면 -> 문장1 실행
+ * 만약 조건2가 true라면 -> 문장2 실행
+ * ...
+ * 위의 조건이 모두 false라면 -> 문장5 실행
+ * ====================================
+ * if(조건1)
+ *      문장1;
+ * else if(조건2)
+ *      문장2;
+ * else if(조건3)
+ *      문장3;
+ * else if(조건4)
+ *      문장4;
+ * else
+ *      문장5;
+ */
 
-    cout << "첫 번째 숫자 :";
-    cin >> num1;
-    cout << "두 번째 숫자 :";
-    cin >> num2;
+// * 여러 방항 조건 분기를 사용해서 학점을 구하는 프로그램
+// * 90 이상 - A, 80 이상 - B, 70 이상 - C, 60 이상 - D, 나머지 F
 
-    if (num1 > num2){
-        cout << num1 << "이 더 큽니다(첫번째 수)" << endl;
-    } else if (num1 == num2){
-        cout << num1 << "과(와) " << num2 << "은(는) 같습니다." << endl;
-    } else if (num1 < num2){
-        cout << num2 << "이 더 큽니다(두번째 수)" << endl;
+    int score;
+    char grade;
+
+    cout << "점수 :" ;
+    cin >> score;
+
+    if (score <= 100) {
+        if (score >= 90) {
+            grade = 'A';
+        } else if (score >= 80) {
+            grade = 'B';
+        } else if (score >= 70) {
+            grade = 'C';
+        } else if (score >= 60) {
+            grade = 'D';
+        } else {
+            grade = 'F';
+        }
+
+        cout << "두둥! 당신의 학점은!? [ " << grade << " ] 입니다!";
+
+    } else if (score > 100){
+        cout << "점수는 100점 이상 받을 수 없습니다.";
     }
-// * 복합 구문을 사용해서 명확하게 짝을 맞춰야 합니다.
+
 
 
 
