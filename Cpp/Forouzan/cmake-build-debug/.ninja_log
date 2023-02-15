@@ -1,8 +1,8 @@
 # ninja log v5
 2	471	6974025196170983	CMakeFiles/Forouzan.dir/main.cpp.obj	2d8eb0788d906a05
 2	436	6978234906202487	CMakeFiles/Forouzan.dir/Chapter03_07.cpp.obj	70e5694e58835aec
-2	675	6980050437080468	build.ninja	9e0719de36e364d5
-804	1220	6979990797613611	Forouzan.exe	71d1cd9707a2edcf
+2	675	6981686546421402	build.ninja	9e0719de36e364d5
+487	752	6981685258113230	Forouzan.exe	71d1cd9707a2edcf
 1	489	6974858829158264	CMakeFiles/Forouzan.dir/Chapter02_04_2.cpp.obj	6f212f64ee055eca
 3	736	6974741179108137	CMakeFiles/Forouzan.dir/testMain.cpp.obj	1afc88024723d0e0
 9	740	6978111236181695	CMakeFiles/Forouzan.dir/Chpater03_03.cpp.obj	77c3d37bfbb90976
@@ -20,24 +20,4 @@
 2	404	6978170518628443	CMakeFiles/Forouzan.dir/Chpater03_05.cpp.obj	52eb9dc57101d822
 1	335	6978192002069817	CMakeFiles/Forouzan.dir/Chapter03_06.cpp.obj	42cb229b824d949f
 1	337	6979056023580352	CMakeFiles/Forouzan.dir/Chapter03_ProgrammingTest.cpp.obj	35fe768cf7206894
-3	802	6979990793558240	CMakeFiles/Forouzan.dir/Chapter04_01.cpp.obj	613d67316490ae3f
-1	2347	6981673863256603	CMakeFiles/Forouzan.dir/Chapter04_01.cpp.obj	613d67316490ae3f
-2348	2772	6981673867451288	Forouzan.exe	71d1cd9707a2edcf
-4	775	6981674126898126	CMakeFiles/Forouzan.dir/Chapter04_01.cpp.obj	613d67316490ae3f
-775	1186	6981674130902981	Forouzan.exe	71d1cd9707a2edcf
-2	829	6981674482097587	CMakeFiles/Forouzan.dir/Chapter04_01.cpp.obj	613d67316490ae3f
-831	1278	6981674486492780	Forouzan.exe	71d1cd9707a2edcf
-2	2742	6981683801026768	CMakeFiles/Forouzan.dir/Chapter04_01.cpp.obj	613d67316490ae3f
-2743	3165	6981683805186991	Forouzan.exe	71d1cd9707a2edcf
-1	433	6981684167833620	CMakeFiles/Forouzan.dir/Chapter04_01.cpp.obj	613d67316490ae3f
-434	681	6981684170245423	Forouzan.exe	71d1cd9707a2edcf
-2	522	6981684750579936	CMakeFiles/Forouzan.dir/Chapter04_01.cpp.obj	613d67316490ae3f
-522	805	6981684753340165	Forouzan.exe	71d1cd9707a2edcf
-1	481	6981685034472585	CMakeFiles/Forouzan.dir/Chapter04_01.cpp.obj	613d67316490ae3f
-482	742	6981685037009758	Forouzan.exe	71d1cd9707a2edcf
-1	500	6981685087198055	CMakeFiles/Forouzan.dir/Chapter04_01.cpp.obj	613d67316490ae3f
-500	812	6981685090215824	Forouzan.exe	71d1cd9707a2edcf
-2	475	6981685171595076	CMakeFiles/Forouzan.dir/Chapter04_01.cpp.obj	613d67316490ae3f
-476	735	6981685174089973	Forouzan.exe	71d1cd9707a2edcf
 2	486	6981685255531134	CMakeFiles/Forouzan.dir/Chapter04_01.cpp.obj	613d67316490ae3f
-487	752	6981685258113230	Forouzan.exe	71d1cd9707a2edcf
