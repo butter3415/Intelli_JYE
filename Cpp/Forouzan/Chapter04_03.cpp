@@ -60,40 +60,59 @@ int main() {
 //            break;
 //    }
 
-// - default 분기
-//   : switch 구문의 모든 case 분기에도 진입하지 못 한 경우 특정 문장을 실행하고 싶을때 default 구문 실행
+//// - default 분기
+////   : switch 구문의 모든 case 분기에도 진입하지 못 한 경우 특정 문장을 실행하고 싶을때 default 구문 실행
+//
+//// * switch 조건을 사용해서 점수를 기반으로 학접 출력하기
+//    int score;
+//    char grade;
+//
+//    cout << "점수(1~100) :";
+//    cin >> score;
+//
+//    if (score > 100){
+//        score = 100;
+//    } else if(score < 0){
+//        score = 0;
+//    }
+//
+//    switch(score /10){
+//        case 10 : grade = 'A';
+//                  break;
+//        case 9 : grade = 'A';
+//                 break;
+//        case 8 : grade = 'B';
+//                 break;
+//        case 7 : grade = 'C';
+//                 break;
+//        case 6 : grade = 'D';
+//                 break;
+//        default : grade = 'F';
+//    }
+//
+//    cout << "점수는 " << score << "점이며, " ;
+//    cout << "학점은 " << grade << "입니다!" << endl;
 
-// * switch 조건을 사용해서 점수를 기반으로 학접 출력하기
-    int score;
+// 분기 결합
+// : 실행 작업이 같다면 분기를 결합해서 활용 가능
+// : case 분기 집입 후 break 구문 만나기 전 모든 문장 실행하기 때문에 이를 이용.
+
+// * switch 조건문을 사용해서 pass/ fail 학점 찾기
     char grade;
 
-    cout << "점수(1~100) :";
-    cin >> score;
+    cout << "학점을 입력하세요 :";
+    cin >> grade;
 
-    if (score > 100){
-        score = 100;
-    } else if(score < 0){
-        score = 0;
+    switch(grade){
+        case 'A' :
+        case 'B' :
+        case 'C' : cout << "pass입니다.";
+                   break;
+        case 'D' :
+        case 'F' : cout << "fail입니다.";
+                   break;
+        default : cout << "입력 오류!";
     }
-
-    switch(score /10){
-        case 10 : grade = 'A';
-                  break;
-        case 9 : grade = 'A';
-                 break;
-        case 8 : grade = 'B';
-                 break;
-        case 7 : grade = 'C';
-                 break;
-        case 6 : grade = 'D';
-                 break;
-        default : grade = 'F';
-    }
-
-    cout << "점수는 " << score << "점이며, " ;
-    cout << "학점은 " << grade << "입니다!" << endl;
-
-
 
 
 
