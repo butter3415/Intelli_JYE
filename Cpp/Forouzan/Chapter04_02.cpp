@@ -17,20 +17,40 @@ using namespace std;
 
 int main() {
 
-// [2] 논리 표현식 사용
-// : 관계 표현식과 일치 표현식을 논리 표현식으로 조합하면 복잡한 조건을 만들 수 있다.
+//// [2] 논리 표현식 사용
+//// : 관계 표현식과 일치 표현식을 논리 표현식으로 조합하면 복잡한 조건을 만들 수 있다.
+//
+//// - AND 표현식 사용 (조건1 && 조건2)
+//    int age;
+//    bool ageLimit;
+//
+//    cout << "나이 :";
+//    cin >> age;
+//
+//    if ((age >= 25) && (age <= 100)) {
+//        cout << "자동차를 대여할 수 있습니다.";
+//    } else {
+//        cout << "죄송합니다. 자동차 대여가 어렵습니다.";
+//    }
 
-// - AND 표현식 사용
-    int age;
-    bool ageLimit;
+// - OR 표현식 사용 (조건1 || 조건2)
+// * 특정한 온도 범위에 따라 에어컨을 냉방 또는 난방으로 가동하는 프로그램
 
-    cout << "나이 :";
-    cin >> age;
+    int temperature;
+    bool hotTemp, coolTemp;
 
-    if ((age >= 25) && (age <= 100)) {
-        cout << "자동차를 대여할 수 있습니다.";
+    cout << "현재 온도 :";
+    cin >> temperature;
+
+    if ((temperature >= 23) || (temperature <= 15)){
+        cout << "에어컨이 켜집니다." << endl;
+        if (temperature >= 23){
+            cout << "냉방 모드로 작동합니다.";
+        } else if (temperature <= 15){
+            cout << "난방 모드로 작동합니다.";
+        }
     } else {
-        cout << "죄송합니다. 자동차 대여가 어렵습니다.";
+        cout << "에어컨이 꺼집니다.";
     }
 
 
