@@ -33,26 +33,45 @@ int main() {
 //        cout << "죄송합니다. 자동차 대여가 어렵습니다.";
 //    }
 
-// - OR 표현식 사용 (조건1 || 조건2)
-// * 특정한 온도 범위에 따라 에어컨을 냉방 또는 난방으로 가동하는 프로그램
+//// - OR 표현식 사용 (조건1 || 조건2)
+//// * 특정한 온도 범위에 따라 에어컨을 냉방 또는 난방으로 가동하는 프로그램
+//
+//    int temperature;
+//    bool hotTemp, coolTemp;
+//
+//    cout << "현재 온도 :";
+//    cin >> temperature;
+//
+//    if ((temperature >= 23) || (temperature <= 15)){
+//        cout << "에어컨이 켜집니다." << endl;
+//        if (temperature >= 23){
+//            cout << "냉방 모드로 작동합니다.";
+//        } else if (temperature <= 15){
+//            cout << "난방 모드로 작동합니다.";
+//        }
+//    } else {
+//        cout << "에어컨이 꺼집니다.";
+//    }
 
-    int temperature;
-    bool hotTemp, coolTemp;
+// - NOT 표현식 사용 (논리 표현식 값 반전)
+// * 3가지 조건을 확인하여 윤년을 찾는 프로그램
+// * 윤년 = 400으로 나눌 수 있는가? || (4로 나눌 수 있는가? && !100으로 나눌 수 있는가?)
 
-    cout << "현재 온도 :";
-    cin >> temperature;
+    int year;
+    bool div400, div4, div100;
 
-    if ((temperature >= 23) || (temperature <= 15)){
-        cout << "에어컨이 켜집니다." << endl;
-        if (temperature >= 23){
-            cout << "냉방 모드로 작동합니다.";
-        } else if (temperature <= 15){
-            cout << "난방 모드로 작동합니다.";
-        }
+    cout << "연도 :";
+    cin >> year;
+
+    div400 = (year % 400) == 0;
+    div4 = (year % 4) == 0;
+    div100 = (year % 100) == 0;
+
+    if ((div400) || ((div4) && (!div100))){
+        cout << year << "년은 윤년입니다.";
     } else {
-        cout << "에어컨이 꺼집니다.";
+        cout << year << "년은 윤년이 아닙니다.";
     }
-
 
 
 
