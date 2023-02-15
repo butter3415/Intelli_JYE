@@ -57,26 +57,26 @@ int main() {
 //    cout << "총 급여 = " << setprecision(2) << totalpay << endl;
 //    // ↑ =======================지혜 방식======================= ↑
 
-    double hours, rate, regularPay, overPay, totalPay;
-
-    cout << "업무 시간을 입력하세요 :";
-    cin >> hours;
-    cout << "시간당 급여를 입력하세요 :";
-    cin >> rate;
-
-    regularPay = hours * rate;
-    overPay = 0.0;
-
-    if(hours > 40.0){
-        overPay = (hours - 40.0) * rate * 0.30;
-    }
-
-    totalPay = regularPay + overPay;
-
-    cout << fixed << showpoint;
-    cout << "일반 급여 = " << setprecision(2) << regularPay << endl;
-    cout << "초과 근무에 대한 급여 = " << setprecision(2) << overPay << endl;
-    cout << "전체 급여 = " << setprecision(2) << totalPay << endl;
+//    double hours, rate, regularPay, overPay, totalPay;
+//
+//    cout << "업무 시간을 입력하세요 :";
+//    cin >> hours;
+//    cout << "시간당 급여를 입력하세요 :";
+//    cin >> rate;
+//
+//    regularPay = hours * rate;
+//    overPay = 0.0;
+//
+//    if(hours > 40.0){
+//        overPay = (hours - 40.0) * rate * 0.30;
+//    }
+//
+//    totalPay = regularPay + overPay;
+//
+//    cout << fixed << showpoint;
+//    cout << "일반 급여 = " << setprecision(2) << regularPay << endl;
+//    cout << "초과 근무에 대한 급여 = " << setprecision(2) << overPay << endl;
+//    cout << "전체 급여 = " << setprecision(2) << totalPay << endl;
 
 // 주의사항
 // - 일치 연산자가 아니라 할당 연산자를 사용하는 경우 : 일치 연산자 (==) / 할당 연산자(=) 헷갈리지 않기!
@@ -99,23 +99,47 @@ int main() {
 //        cout << "fail!";
 //    }
 
-// * if-else 조건문을 사용해서 입력받은 더 큰 숫자 또는 숫자가 같을 경우 첫 번째 숫자를 출력하는 프로그램
-    int num1, num2, maxNum;
+//// * if-else 조건문을 사용해서 입력받은 더 큰 숫자 또는 숫자가 같을 경우 첫 번째 숫자를 출력하는 프로그램
+//    int num1, num2, maxNum;
+//
+//    cout << "첫 번째 수 :";
+//    cin >> num1;
+//    cout << "두 번째 수 :";
+//    cin >> num2;
+//
+//    if (num1 > num2){
+//        maxNum = num1;
+//    } else if (num2 > num1){
+//        maxNum = num2;
+//    } else if (num1 == num2){
+//        maxNum = num1;
+//    }
+//
+//    cout << "더 큰 숫자는 " << maxNum << "이다!" << endl;
+// 깃은 너무 어렵다..
 
-    cout << "첫 번째 수 :";
+// 중첩 if-else 조건문
+
+// * 입력받은 두 숫자가 왼쪽이 더 큰지, 같은지, 더 작은지 출력하는 프로그램
+    long num1, num2;
+
+    cout << "첫 번째 숫자 :";
     cin >> num1;
-    cout << "두 번째 수 :";
+    cout << "두 번째 숫자 :";
     cin >> num2;
 
     if (num1 > num2){
-        maxNum = num1;
-    } else if (num2 > num1){
-        maxNum = num2;
+        cout << num1 << "이 더 큽니다(첫번째 수)" << endl;
     } else if (num1 == num2){
-        maxNum = num1;
+        cout << num1 << "과(와) " << num2 << "은(는) 같습니다." << endl;
+    } else if (num1 < num2){
+        cout << num2 << "이 더 큽니다(두번째 수)" << endl;
     }
+// * 복합 구문을 사용해서 명확하게 짝을 맞춰야 합니다.
 
-    cout << "더 큰 숫자는 " << maxNum << "이다!" << endl;
-// 깃은 너무 어렵다..
+
+
+
+
 
 }
