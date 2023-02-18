@@ -1,3 +1,47 @@
-// 04 ì¡°ê±´ë¬¸
+// 04 Á¶°Ç¹®
 // Created by 82104 on 2023-02-17.
-// 05 [Lab] ì‘ìš© í”„ë¡œì íŠ¸
+// 05 [Lab] ÀÀ¿ë ÇÁ·ÎÁ§Æ®
+
+# include <iostream>
+using namespace std;
+
+int main() {
+
+/* ÇĞ»ı Á¡¼ö¸¦ 3°³ ÀÔ·Â¹Ş°í ÃÖ¼Ò°ª°ú ÃÖ´ë°ªÀ» ±â¹İÀ¸·Î Æò±ÕÀ» ±¸ÇØ¼­ ÇĞ»ıÀÇ ¼ºÀûÀ» Ã£´Â ÇÁ·Î±×·¥
+ */
+    int score1, score2, score3;
+    int maxNum, minNum, averageNum;
+
+    cout << "½ÃÇè1(±¹¾î)ÀÇ ¼ºÀûÀº?";
+    cin >> score1;
+    cout << "½ÃÇè2(¼öÇĞ)ÀÇ ¼ºÀûÀº?";
+    cin >> score2;
+    cout << "½ÃÇè3(¿µ¾î)ÀÇ ¼ºÀûÀº?";
+    cin >> score3;
+
+    if ((score1 > score2) && (score1 > score3)){
+        maxNum = score1;
+    }
+    if ((score2 > score1) && (score2 > score3)){
+        maxNum = score2;
+    }
+    if ((score3 > score1) && (score3 > score2)){
+        maxNum = score3;
+    }
+
+    if ((score1 < score2) && (score1 < score3)){
+        minNum = score1;
+    }
+    if ((score2 < score1) && (score2 < score3)){
+        minNum = score2;
+    }
+    if ((score3 < score1) && (score3 < score2)){
+        minNum = score3;
+    }
+
+    averageNum = (maxNum + minNum) / 2 ;
+
+    cout << "ÀÌ ÇĞ»ıÀÇ Æò±ÕÀº " << averageNum << "Á¡ ÀÔ´Ï´Ù.";
+
+
+}
