@@ -42,29 +42,53 @@ int main() {
 //        cout << "값을 다시 입력하세요.";
 //    }
 
-// * 03. 사용자로부터 1 ~ 12 사이의 숫자를 입력받고 해당 월을 January, February, ... , December 와 같은 형태의 영어로 출력하는 프로그램을 만드세요.
-    int num1To12;
-    string monthEnglish;
+//// * 03. 사용자로부터 1 ~ 12 사이의 숫자를 입력받고 해당 월을 January, February, ... , December 와 같은 형태의 영어로 출력하는 프로그램을 만드세요.
+//    int num1To12;
+//    string monthEnglish;
+//
+//    cout << "숫자 입력(1~12) :";
+//    cin >> num1To12;
+//
+//    switch (num1To12) {
+//        case 1 : monthEnglish = "January"; break;
+//        case 2 : monthEnglish = "February"; break;
+//        case 3 : monthEnglish = "March"; break;
+//        case 4 : monthEnglish = "April"; break;
+//        case 5 : monthEnglish = "May"; break;
+//        case 6 : monthEnglish = "June"; break;
+//        case 7 : monthEnglish = "July"; break;
+//        case 8 : monthEnglish = "August"; break;
+//        case 9 : monthEnglish = "September"; break;
+//        case 10 : monthEnglish = "October"; break;
+//        case 11 : monthEnglish = "November"; break;
+//        case 12 : monthEnglish = "December"; break;
+//    }
+//
+//    cout << num1To12 << "월: " << monthEnglish << ".";
 
-    cout << "숫자 입력(1~12) :";
-    cin >> num1To12;
+// * 04. 차량의 종류(일반 승용차 'c', 버스 'b', 트럭 't')와 주차장에서 차량이 있던 시간을 입력받은 뒤,
+// *     다음과 같은 주차 요금에 따라서 요금을 계산하는 프로그램을 작성하세요.
 
-    switch (num1To12) {
-        case 1 : monthEnglish = "January"; break;
-        case 2 : monthEnglish = "February"; break;
-        case 3 : monthEnglish = "March"; break;
-        case 4 : monthEnglish = "April"; break;
-        case 5 : monthEnglish = "May"; break;
-        case 6 : monthEnglish = "June"; break;
-        case 7 : monthEnglish = "July"; break;
-        case 8 : monthEnglish = "August"; break;
-        case 9 : monthEnglish = "September"; break;
-        case 10 : monthEnglish = "October"; break;
-        case 11 : monthEnglish = "November"; break;
-        case 12 : monthEnglish = "December"; break;
+    int parkingHour, parkingPay;
+    char carKind;
+
+    cout << "차량의 종류(일반 승용차 - c, 버스 - b, 트럭 - t) :";
+    cin >> carKind;
+    cout << "주차장에서 차량이 있던 시간 :";
+    cin >> parkingHour;
+
+    if ((carKind == 'c') || (carKind == 'b') || (carKind == 't')) {
+        if (carKind == 'c') {
+            parkingPay = parkingHour * 2;
+        } else if (carKind == 'b') {
+            parkingPay = parkingHour * 3;
+        } else if (carKind == 't') {
+            parkingPay = parkingHour * 4;
+        }
+        cout << "해당 차량의 주차 요금은 " << parkingPay << "달러입니다.";
+    } else {
+        cout << "다시 입력 하세요.";
     }
-
-    cout << num1To12 << "월: " << monthEnglish << ".";
 
 
 
