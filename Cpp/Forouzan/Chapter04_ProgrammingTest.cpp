@@ -90,54 +90,57 @@ int main() {
 //        cout << "다시 입력 하세요.";
 //    }
 
-// * 05. 학생의 점수를 기반으로 학점을 구하는 프로그램을 만드세요.
-// *     점수(0~100점 기준)를 3개 읽어 들이고, 다음과 같은 기준에 따라서 학점을 계산합니다.
+//// * 05. 학생의 점수를 기반으로 학점을 구하는 프로그램을 만드세요.
+//// *     점수(0~100점 기준)를 3개 읽어 들이고, 다음과 같은 기준에 따라서 학점을 계산합니다.
+//
+//    int num1, num2, num3;
+//    int average;
+//    char grade;
+//
+//    cout << "첫번째 과목 점수 :";
+//    cin >> num1;
+//    cout << "두번째 과목 점수 :";
+//    cin >> num2;
+//    cout << "세번째 과목 점수 :";
+//    cin >> num3;
+//
+//    average = (num1 + num2 + num3) / 3;
+//
+//    if (average >= 90){
+//        grade = 'A';
+//    } else if ((average < 90) && (average >= 80)){
+//        if (num3 > 90){
+//            grade = 'A';
+//        } else if (num3 <= 90){
+//            grade = 'B';
+//        }
+//    } else if ((average < 80) && (average >= 70)){
+//        if (num3 > 80){
+//            grade = 'B';
+//        } else if (num3 <= 80){
+//            grade = 'C';
+//        }
+//    } else if ((average < 70) && (average >= 60)){
+//        if (num3 > 70){
+//            grade = 'C';
+//        } else if (num3 <= 70){
+//            grade = 'D';
+//        }
+//    } else if ((average < 60)){
+//        if (num3 > 60){
+//            grade = 'D';
+//        } else if (num3 <= 60){
+//            grade = 'F';
+//        }
+//    }
+//
+//    cout << "해당 학생의 점수 평균은 " << average << "점이며, " << endl;
+//    cout << "세번째 과목 점수는 " << num3 << "점이므로, " << endl;
+//    cout << "해당 학생의 학점은 '" << grade << "'이다." ;
 
-    int num1, num2, num3;
-    int average;
-    char grade;
-
-    cout << "첫번째 과목 점수 :";
-    cin >> num1;
-    cout << "두번째 과목 점수 :";
-    cin >> num2;
-    cout << "세번째 과목 점수 :";
-    cin >> num3;
-
-    average = (num1 + num2 + num3) / 3;
-
-    if (average >= 90){
-        grade = 'A';
-    } else if ((average < 90) && (average >= 80)){
-        if (num3 > 90){
-            grade = 'A';
-        } else if (num3 <= 90){
-            grade = 'B';
-        }
-    } else if ((average < 80) && (average >= 70)){
-        if (num3 > 80){
-            grade = 'B';
-        } else if (num3 <= 80){
-            grade = 'C';
-        }
-    } else if ((average < 70) && (average >= 60)){
-        if (num3 > 70){
-            grade = 'C';
-        } else if (num3 <= 70){
-            grade = 'D';
-        }
-    } else if ((average < 60)){
-        if (num3 > 60){
-            grade = 'D';
-        } else if (num3 <= 60){
-            grade = 'F';
-        }
-    }
-
-    cout << "해당 학생의 점수 평균은 " << average << "점이며, " << endl;
-    cout << "세번째 과목 점수는 " << num3 << "점이므로, " << endl;
-    cout << "해당 학생의 학점은 '" << grade << "'이다." ;
-
+// * 06. 대학교에서 학생의 총 수업료를 계산하고 출력하는 프로그램을 만드세요. 학생들은 12학점에 대해 학점당 10달러의 수수료를 지불합니다.
+// *     12학점을 넘는 분량은 수수료가 없습니다. 등록비는 학생 당 10달러라고 가정합니다.
+//       <문제 이해 불가...>
 
 
 
