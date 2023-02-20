@@ -66,32 +66,77 @@ int main() {
 //
 //    cout << num1To12 << "월: " << monthEnglish << ".";
 
-// * 04. 차량의 종류(일반 승용차 'c', 버스 'b', 트럭 't')와 주차장에서 차량이 있던 시간을 입력받은 뒤,
-// *     다음과 같은 주차 요금에 따라서 요금을 계산하는 프로그램을 작성하세요.
+//// * 04. 차량의 종류(일반 승용차 'c', 버스 'b', 트럭 't')와 주차장에서 차량이 있던 시간을 입력받은 뒤,
+//// *     다음과 같은 주차 요금에 따라서 요금을 계산하는 프로그램을 작성하세요.
+//
+//    int parkingHour, parkingPay;
+//    char carKind;
+//
+//    cout << "차량의 종류(일반 승용차 - c, 버스 - b, 트럭 - t) :";
+//    cin >> carKind;
+//    cout << "주차장에서 차량이 있던 시간 :";
+//    cin >> parkingHour;
+//
+//    if ((carKind == 'c') || (carKind == 'b') || (carKind == 't')) {
+//        if (carKind == 'c') {
+//            parkingPay = parkingHour * 2;
+//        } else if (carKind == 'b') {
+//            parkingPay = parkingHour * 3;
+//        } else if (carKind == 't') {
+//            parkingPay = parkingHour * 4;
+//        }
+//        cout << "해당 차량의 주차 요금은 " << parkingPay << "달러입니다.";
+//    } else {
+//        cout << "다시 입력 하세요.";
+//    }
 
-    int parkingHour, parkingPay;
-    char carKind;
+// * 05. 학생의 점수를 기반으로 학점을 구하는 프로그램을 만드세요.
+// *     점수(0~100점 기준)를 3개 읽어 들이고, 다음과 같은 기준에 따라서 학점을 계산합니다.
 
-    cout << "차량의 종류(일반 승용차 - c, 버스 - b, 트럭 - t) :";
-    cin >> carKind;
-    cout << "주차장에서 차량이 있던 시간 :";
-    cin >> parkingHour;
+    int num1, num2, num3;
+    int average;
+    char grade;
 
-    if ((carKind == 'c') || (carKind == 'b') || (carKind == 't')) {
-        if (carKind == 'c') {
-            parkingPay = parkingHour * 2;
-        } else if (carKind == 'b') {
-            parkingPay = parkingHour * 3;
-        } else if (carKind == 't') {
-            parkingPay = parkingHour * 4;
+    cout << "첫번째 과목 점수 :";
+    cin >> num1;
+    cout << "두번째 과목 점수 :";
+    cin >> num2;
+    cout << "세번째 과목 점수 :";
+    cin >> num3;
+
+    average = (num1 + num2 + num3) / 3;
+
+    if (average >= 90){
+        grade = 'A';
+    } else if ((average < 90) && (average >= 80)){
+        if (num3 > 90){
+            grade = 'A';
+        } else if (num3 <= 90){
+            grade = 'B';
         }
-        cout << "해당 차량의 주차 요금은 " << parkingPay << "달러입니다.";
-    } else {
-        cout << "다시 입력 하세요.";
+    } else if ((average < 80) && (average >= 70)){
+        if (num3 > 80){
+            grade = 'B';
+        } else if (num3 <= 80){
+            grade = 'C';
+        }
+    } else if ((average < 70) && (average >= 60)){
+        if (num3 > 70){
+            grade = 'C';
+        } else if (num3 <= 70){
+            grade = 'D';
+        }
+    } else if ((average < 60)){
+        if (num3 > 60){
+            grade = 'D';
+        } else if (num3 <= 60){
+            grade = 'F';
+        }
     }
 
-
-
+    cout << "해당 학생의 점수 평균은 " << average << "점이며, " << endl;
+    cout << "세번째 과목 점수는 " << num3 << "점이므로, " << endl;
+    cout << "해당 학생의 학점은 '" << grade << "'이다." ;
 
 
 
