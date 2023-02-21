@@ -142,6 +142,32 @@ int main() {
 // *     12학점을 넘는 분량은 수수료가 없습니다. 등록비는 학생 당 10달러라고 가정합니다.
 //       <문제 이해 불가...>
 
+// * 07. 도매점에서 물건을 구매할 때, 다음과 같이 수량에 따라서 추가적인 할인이 들어갑니다. 물건 하나의 가격과 구매 수량을 입력 받고,
+// *     할인이 적용된 전체 가격을 출력하는 프로그램을 작성하세요.
+// *     1-9개 : 0% | 10-49개 : 3% | 50-99개 : 5% | 100개 이상 : 10%
+    int quantity;
+    double prize, basePrize, totalPrize;
+
+    cout << "물건 하나의 가격 :";
+    cin >> prize;
+    cout << "구매 수량 :";
+    cin >> quantity;
+
+    basePrize = quantity * prize;
+
+    if ((quantity >= 1) && (quantity < 10)){
+        totalPrize = basePrize - (basePrize * 0.0);
+    } else if ((quantity >= 10) && (quantity < 50)){
+        totalPrize = basePrize - (basePrize * 0.03);
+    } else if ((quantity >= 50) && (quantity < 100)){
+        totalPrize = basePrize - (basePrize * 0.05);
+    } else if ((quantity >= 100)){
+        totalPrize = basePrize - (basePrize * 0.10);
+    }
+
+    cout << "해당 물건을 " << quantity << "개 구매했을 때 금액 : " << totalPrize << endl;
+
+
 
 
 }
