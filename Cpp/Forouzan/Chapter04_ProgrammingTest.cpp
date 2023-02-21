@@ -167,29 +167,108 @@ int main() {
 //
 //    cout << "해당 물건을 " << quantity << "개 구매했을 때 금액 : " << totalPrize << endl;
 
-// * 08. 사용자로부터 점의 좌표 x와 y를 입력받고, 직교 좌표계(데카르트 좌표계)에서 점이 몇 사분면에 위치하는지를 출력하는 프로그램을 만드세요.
-// *     예를 들어서 x와 y가 모두 양수라면 점은 1-사분면에 위치하며, 모두 음수라면 점은 3-사분면에 위치합니다.
-    int x, y;
-    string coordinate;
+//// * 08. 사용자로부터 점의 좌표 x와 y를 입력받고, 직교 좌표계(데카르트 좌표계)에서 점이 몇 사분면에 위치하는지를 출력하는 프로그램을 만드세요.
+//// *     예를 들어서 x와 y가 모두 양수라면 점은 1-사분면에 위치하며, 모두 음수라면 점은 3-사분면에 위치합니다.
+//    int x, y;
+//    string coordinate;
+//
+//    cout << "x 값 :";
+//    cin >> x;
+//    cout << "y 값 :";
+//    cin >> y;
+//
+//    if ((x > 0) && (y > 0)){
+//        coordinate = "1-사분면";
+//    } else if ((x < 0) && (y > 0)){
+//        coordinate = "2-사분면";
+//    } else if ((x < 0) && (y < 0)){
+//        coordinate = "3-사분면";
+//    } else if ((x > 0) && (y < 0)){
+//        coordinate = "4-사분면";
+//    }
+//
+//    cout << "좌표 ( " << x << ", " << y << " ) 는 " << coordinate << "이다.";
 
-    cout << "x 값 :";
-    cin >> x;
-    cout << "y 값 :";
-    cin >> y;
+// * 09. [프로그램 4-17]에 윤년의 개념(2월이 28일이 아니라 29일인 경우)을 추가해서 프로그램을 수정하세요.
+// *     프로그램은 사용자로부터 추가 연도를 입력받아야 하며, 윤년은 다음과 같은 식으로 구할 수 있습니다.
+// *     leapYear = (year * 400) || (year % 4 && ! (year % 100))
 
-    if ((x > 0) && (y > 0)){
-        coordinate = "1-사분면";
-    } else if ((x < 0) && (y > 0)){
-        coordinate = "2-사분면";
-    } else if ((x < 0) && (y < 0)){
-        coordinate = "3-사분면";
-    } else if ((x > 0) && (y < 0)){
-        coordinate = "4-사분면";
+    int year, month, day;
+    int totalDays = 0;
+    bool leapYear;
+
+    cout << "몇 년 :";
+    cin >> year;
+    cout << "몇 월 :";
+    cin >> month;
+    cout << "몇 일 :";
+    cin >> day;
+
+    leapYear = (year * 400) || (year % 4 && ! (year % 100));
+
+    int m01 = 31, m03 = 31, m05 = 31, m07 = 31, m08 = 31, m10 = 31, m12 = 31;
+    int m02 = 28, m04 = 30, m06 = 30, m09 = 30, m11 = 30;
+
+    if (leapYear) {
+        m02 = 29;
+        switch (month) {
+            case 12 :
+                totalDays += m11;
+            case 11 :
+                totalDays += m10;
+            case 10 :
+                totalDays += m09;
+            case 9 :
+                totalDays += m08;
+            case 8 :
+                totalDays += m07;
+            case 7 :
+                totalDays += m06;
+            case 6 :
+                totalDays += m05;
+            case 5 :
+                totalDays += m04;
+            case 4 :
+                totalDays += m03;
+            case 3 :
+                totalDays += m02;
+            case 2 :
+                totalDays += m01;
+            case 1 :
+                totalDays += 0;
+        }
+    } else if (!leapYear){
+        switch (month) {
+            case 12 :
+                totalDays += m11;
+            case 11 :
+                totalDays += m10;
+            case 10 :
+                totalDays += m09;
+            case 9 :
+                totalDays += m08;
+            case 8 :
+                totalDays += m07;
+            case 7 :
+                totalDays += m06;
+            case 6 :
+                totalDays += m05;
+            case 5 :
+                totalDays += m04;
+            case 4 :
+                totalDays += m03;
+            case 3 :
+                totalDays += m02;
+            case 2 :
+                totalDays += m01;
+            case 1 :
+                totalDays += 0;
+        }
     }
 
-    cout << "좌표 ( " << x << ", " << y << " ) 는 " << coordinate << "이다.";
+    totalDays += day;
 
-
+    cout << "올해의 " << totalDays << "번째 날입니다." << endl;
 
 
 
