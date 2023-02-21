@@ -142,30 +142,53 @@ int main() {
 // *     12학점을 넘는 분량은 수수료가 없습니다. 등록비는 학생 당 10달러라고 가정합니다.
 //       <문제 이해 불가...>
 
-// * 07. 도매점에서 물건을 구매할 때, 다음과 같이 수량에 따라서 추가적인 할인이 들어갑니다. 물건 하나의 가격과 구매 수량을 입력 받고,
-// *     할인이 적용된 전체 가격을 출력하는 프로그램을 작성하세요.
-// *     1-9개 : 0% | 10-49개 : 3% | 50-99개 : 5% | 100개 이상 : 10%
-    int quantity;
-    double prize, basePrize, totalPrize;
+//// * 07. 도매점에서 물건을 구매할 때, 다음과 같이 수량에 따라서 추가적인 할인이 들어갑니다. 물건 하나의 가격과 구매 수량을 입력 받고,
+//// *     할인이 적용된 전체 가격을 출력하는 프로그램을 작성하세요.
+//// *     1-9개 : 0% | 10-49개 : 3% | 50-99개 : 5% | 100개 이상 : 10%
+//    int quantity;
+//    double prize, basePrize, totalPrize;
+//
+//    cout << "물건 하나의 가격 :";
+//    cin >> prize;
+//    cout << "구매 수량 :";
+//    cin >> quantity;
+//
+//    basePrize = quantity * prize;
+//
+//    if ((quantity >= 1) && (quantity < 10)){
+//        totalPrize = basePrize - (basePrize * 0.0);
+//    } else if ((quantity >= 10) && (quantity < 50)){
+//        totalPrize = basePrize - (basePrize * 0.03);
+//    } else if ((quantity >= 50) && (quantity < 100)){
+//        totalPrize = basePrize - (basePrize * 0.05);
+//    } else if ((quantity >= 100)){
+//        totalPrize = basePrize - (basePrize * 0.10);
+//    }
+//
+//    cout << "해당 물건을 " << quantity << "개 구매했을 때 금액 : " << totalPrize << endl;
 
-    cout << "물건 하나의 가격 :";
-    cin >> prize;
-    cout << "구매 수량 :";
-    cin >> quantity;
+// * 08. 사용자로부터 점의 좌표 x와 y를 입력받고, 직교 좌표계(데카르트 좌표계)에서 점이 몇 사분면에 위치하는지를 출력하는 프로그램을 만드세요.
+// *     예를 들어서 x와 y가 모두 양수라면 점은 1-사분면에 위치하며, 모두 음수라면 점은 3-사분면에 위치합니다.
+    int x, y;
+    string coordinate;
 
-    basePrize = quantity * prize;
+    cout << "x 값 :";
+    cin >> x;
+    cout << "y 값 :";
+    cin >> y;
 
-    if ((quantity >= 1) && (quantity < 10)){
-        totalPrize = basePrize - (basePrize * 0.0);
-    } else if ((quantity >= 10) && (quantity < 50)){
-        totalPrize = basePrize - (basePrize * 0.03);
-    } else if ((quantity >= 50) && (quantity < 100)){
-        totalPrize = basePrize - (basePrize * 0.05);
-    } else if ((quantity >= 100)){
-        totalPrize = basePrize - (basePrize * 0.10);
+    if ((x > 0) && (y > 0)){
+        coordinate = "1-사분면";
+    } else if ((x < 0) && (y > 0)){
+        coordinate = "2-사분면";
+    } else if ((x < 0) && (y < 0)){
+        coordinate = "3-사분면";
+    } else if ((x > 0) && (y < 0)){
+        coordinate = "4-사분면";
     }
 
-    cout << "해당 물건을 " << quantity << "개 구매했을 때 금액 : " << totalPrize << endl;
+    cout << "좌표 ( " << x << ", " << y << " ) 는 " << coordinate << "이다.";
+
 
 
 
