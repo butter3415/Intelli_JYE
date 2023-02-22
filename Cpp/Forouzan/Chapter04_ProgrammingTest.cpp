@@ -189,86 +189,91 @@ int main() {
 //
 //    cout << "좌표 ( " << x << ", " << y << " ) 는 " << coordinate << "이다.";
 
-// * 09. [프로그램 4-17]에 윤년의 개념(2월이 28일이 아니라 29일인 경우)을 추가해서 프로그램을 수정하세요.
-// *     프로그램은 사용자로부터 추가 연도를 입력받아야 하며, 윤년은 다음과 같은 식으로 구할 수 있습니다.
-// *     leapYear = (year * 400) || (year % 4 && ! (year % 100))
+//// * 09. [프로그램 4-17]에 윤년의 개념(2월이 28일이 아니라 29일인 경우)을 추가해서 프로그램을 수정하세요.
+//// *     프로그램은 사용자로부터 추가 연도를 입력받아야 하며, 윤년은 다음과 같은 식으로 구할 수 있습니다.
+//// *     leapYear = (year * 400) || (year % 4 && ! (year % 100))
+//
+//    int year, month, day;
+//    int totalDays = 0;
+//    bool leapYear;
+//
+//    cout << "몇 년 :";
+//    cin >> year;
+//    cout << "몇 월 :";
+//    cin >> month;
+//    cout << "몇 일 :";
+//    cin >> day;
+//
+//    leapYear = (year * 400) || (year % 4 && ! (year % 100));
+//
+//    int m01 = 31, m03 = 31, m05 = 31, m07 = 31, m08 = 31, m10 = 31, m12 = 31;
+//    int m02 = 28, m04 = 30, m06 = 30, m09 = 30, m11 = 30;
+//
+//    if (leapYear) {
+//        m02 = 29;
+//        switch (month) {
+//            case 12 :
+//                totalDays += m11;
+//            case 11 :
+//                totalDays += m10;
+//            case 10 :
+//                totalDays += m09;
+//            case 9 :
+//                totalDays += m08;
+//            case 8 :
+//                totalDays += m07;
+//            case 7 :
+//                totalDays += m06;
+//            case 6 :
+//                totalDays += m05;
+//            case 5 :
+//                totalDays += m04;
+//            case 4 :
+//                totalDays += m03;
+//            case 3 :
+//                totalDays += m02;
+//            case 2 :
+//                totalDays += m01;
+//            case 1 :
+//                totalDays += 0;
+//        }
+//    } else if (!leapYear){
+//        switch (month) {
+//            case 12 :
+//                totalDays += m11;
+//            case 11 :
+//                totalDays += m10;
+//            case 10 :
+//                totalDays += m09;
+//            case 9 :
+//                totalDays += m08;
+//            case 8 :
+//                totalDays += m07;
+//            case 7 :
+//                totalDays += m06;
+//            case 6 :
+//                totalDays += m05;
+//            case 5 :
+//                totalDays += m04;
+//            case 4 :
+//                totalDays += m03;
+//            case 3 :
+//                totalDays += m02;
+//            case 2 :
+//                totalDays += m01;
+//            case 1 :
+//                totalDays += 0;
+//        }
+//    }
+//
+//    totalDays += day;
+//
+//    cout << "올해의 " << totalDays << "번째 날입니다." << endl;
 
-    int year, month, day;
-    int totalDays = 0;
-    bool leapYear;
-
-    cout << "몇 년 :";
-    cin >> year;
-    cout << "몇 월 :";
-    cin >> month;
-    cout << "몇 일 :";
-    cin >> day;
-
-    leapYear = (year * 400) || (year % 4 && ! (year % 100));
-
-    int m01 = 31, m03 = 31, m05 = 31, m07 = 31, m08 = 31, m10 = 31, m12 = 31;
-    int m02 = 28, m04 = 30, m06 = 30, m09 = 30, m11 = 30;
-
-    if (leapYear) {
-        m02 = 29;
-        switch (month) {
-            case 12 :
-                totalDays += m11;
-            case 11 :
-                totalDays += m10;
-            case 10 :
-                totalDays += m09;
-            case 9 :
-                totalDays += m08;
-            case 8 :
-                totalDays += m07;
-            case 7 :
-                totalDays += m06;
-            case 6 :
-                totalDays += m05;
-            case 5 :
-                totalDays += m04;
-            case 4 :
-                totalDays += m03;
-            case 3 :
-                totalDays += m02;
-            case 2 :
-                totalDays += m01;
-            case 1 :
-                totalDays += 0;
-        }
-    } else if (!leapYear){
-        switch (month) {
-            case 12 :
-                totalDays += m11;
-            case 11 :
-                totalDays += m10;
-            case 10 :
-                totalDays += m09;
-            case 9 :
-                totalDays += m08;
-            case 8 :
-                totalDays += m07;
-            case 7 :
-                totalDays += m06;
-            case 6 :
-                totalDays += m05;
-            case 5 :
-                totalDays += m04;
-            case 4 :
-                totalDays += m03;
-            case 3 :
-                totalDays += m02;
-            case 2 :
-                totalDays += m01;
-            case 1 :
-                totalDays += 0;
-        }
-    }
-
-    totalDays += day;
-
-    cout << "올해의 " << totalDays << "번째 날입니다." << endl;
+// * 10. 특정 날짜의 요일을 맞추는 첼러의 공식 (Zeller's congruence)을 활용해서 사용자로부터 연도, 월, 일을 입력받았을 때
+// *     요일을 출력하는 프로그램을 만드세요. 첼러의 공식은 다음과 같습니다.
+// *     weekday = (day + 26 * (monoth - 1) / 10 + year + year / 4 - year / 100 + year / 400) % 7
+// *     ... 이게 뭐여
 
 
 
