@@ -277,6 +277,26 @@ int main() {
 
 // * 11. 사용자로부터 달러 값을 입력받고, 달러 지폐로 이를 지불할 때 지폐의 개수가 최소가 되는 경우를 출력하는 프로그램을 만드세요.
 // *     0이 아닌 수의 지폐 수만 출력하면 됩니다. 참고로 달러는 100달러, 50달러, 20달러, 10달러, 5달러, 1달러 지폐가 있습니다.
+    int dollarPrize;
+    int dollar100, dollar50, dollar20, dollar10, dollar5, dollar1;
+
+    cout << "몇 달러를 갖고 계신가요 ?";
+    cin >> dollarPrize;
+
+    dollar100 = dollarPrize / 100;
+    dollar50 = (dollarPrize - (dollar100 * 100)) / 50;
+    dollar20 = (dollarPrize - (dollar100 * 100) - (dollar50 * 50)) / 20;
+    dollar10 = (dollarPrize - (dollar100 * 100) - (dollar50 * 50) - (dollar20 * 20)) / 10;
+    dollar5 = (dollarPrize - (dollar100 * 100) - (dollar50 * 50) - (dollar20 * 20) - (dollar10 * 10)) / 5;
+    dollar1 = (dollarPrize - (dollar100 * 100) - (dollar50 * 50) - (dollar20 * 20) - (dollar10 * 10) - (dollar5 * 5)) / 1;
+
+    cout << dollarPrize << "달러는 " << endl;
+    cout << "100달러 " << dollar100 << "장" << endl;
+    cout << "50달러 " << dollar50 << "장" << endl;
+    cout << "20달러 " << dollar20 << "장" << endl;
+    cout << "10달러 " << dollar10 << "장" << endl;
+    cout << "5달러 " << dollar5 << "장" << endl;
+    cout << "1달러 " << dollar1 << "장" << endl;
 
 
 }
