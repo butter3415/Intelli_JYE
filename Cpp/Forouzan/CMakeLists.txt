@@ -3,4 +3,4 @@ project(Forouzan)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Forouzan Chapter04_ProgrammingTest.cpp)
+add_executable(Forouzan Chapter04_ExtraQuestion_RSPGame.cpp)
