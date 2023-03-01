@@ -2,12 +2,12 @@
 1	489	6974858829158264	CMakeFiles/Forouzan.dir/Chapter02_04_2.cpp.obj	6f212f64ee055eca
 3	736	6974741179108137	CMakeFiles/Forouzan.dir/testMain.cpp.obj	1afc88024723d0e0
 2	436	6978234906202487	CMakeFiles/Forouzan.dir/Chapter03_07.cpp.obj	70e5694e58835aec
-2	743	6988676747457418	build.ninja	9e0719de36e364d5
-5004	5699	6988661270518351	Forouzan.exe	7f0c6991c4bf6e61
+4	687	6993719236277439	build.ninja	9e0719de36e364d5
+657	1059	6988677165935994	Forouzan.exe	5fe65b9cde022e4c
 2	471	6974025196170983	CMakeFiles/Forouzan.dir/main.cpp.obj	2d8eb0788d906a05
-9	421	6974026394071437	CMakeFiles/Forouzan.dir/mainmain.cpp.obj	15d64fbcaf637e90
 25	817	6984982217977593	CMakeFiles/Forouzan.dir/Chapter04_05.cpp.obj	8e4e20c14b1c243
 9	740	6978111236181695	CMakeFiles/Forouzan.dir/Chpater03_03.cpp.obj	77c3d37bfbb90976
+9	421	6974026394071437	CMakeFiles/Forouzan.dir/mainmain.cpp.obj	15d64fbcaf637e90
 1	351	6977369481543879	CMakeFiles/Forouzan.dir/Chapter03_02.cpp.obj	3af873032592da01
 1	361	6974744641860099	CMakeFiles/Forouzan.dir/Prg2-2.cpp.obj	535677bc4951eee1
 12	442	6981777227534748	CMakeFiles/Forouzan.dir/Chapter04_03.cpp.obj	7768a9afa2d17be1
@@ -25,10 +25,4 @@
 11	553	6981700301437870	CMakeFiles/Forouzan.dir/Chapter04_01.cpp.obj	613d67316490ae3f
 11	409	6981757891718687	CMakeFiles/Forouzan.dir/Chapter04_02.cpp.obj	6bdb2b93e619ad2a
 2	376	6981778161609179	CMakeFiles/Forouzan.dir/Chapter04_04.cpp.obj	e5015f4861f8f1ac
-4	687	6988676747457418	build.ninja	9e0719de36e364d5
-1	618	6988676755561603	CMakeFiles/Forouzan.dir/Chapter04_ExtraQuestion_RSPGame.cpp.obj	89d79f521d9b1e4b
-619	1050	6988676759778264	Forouzan.exe	5fe65b9cde022e4c
-2	596	6988676873643364	CMakeFiles/Forouzan.dir/Chapter04_ExtraQuestion_RSPGame.cpp.obj	89d79f521d9b1e4b
-597	1107	6988676878469751	Forouzan.exe	5fe65b9cde022e4c
 1	656	6988677162177633	CMakeFiles/Forouzan.dir/Chapter04_ExtraQuestion_RSPGame.cpp.obj	89d79f521d9b1e4b
-657	1059	6988677165935994	Forouzan.exe	5fe65b9cde022e4c
